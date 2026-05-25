@@ -1,0 +1,21 @@
+# Raw data files — too large for GitHub (109 MB + 7.5 MB)
+SPD_Crime_Data__2008-Present_20260518 (1).csv
+SPD_Crime_Data__2021tillMay.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Temp / debug scripts
+check_*.py
+debug_html.py
