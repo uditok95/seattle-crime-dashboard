@@ -221,6 +221,27 @@ app.layout = html.Div(style={"background":"#F0EAE0","minHeight":"100vh",
                                  xaxis_title="Incidents 2021-2025",yaxis_title="")))],
                     style={"flex":"1","minWidth":"340px"}),
             ], style={"display":"flex","flexWrap":"wrap","gap":"16px"}),
+
+            dcc.Graph(figure=uw(go.Figure([
+                go.Scatter(
+                    name="U-District",
+                    x=q3["Year"].tolist(), y=q3["ud_count"].tolist(),
+                    mode="lines+markers",
+                    line=dict(color=PURPLE, width=3), marker=dict(size=9),
+                ),
+                go.Scatter(
+                    name="City / 20",
+                    x=q3["Year"].tolist(),
+                    y=(q3["city_count"] / 20).round(0).tolist(),
+                    mode="lines+markers",
+                    line=dict(color=GOLD, width=2, dash="dash"), marker=dict(size=7),
+                    hovertemplate="City/20: %{y}<extra></extra>",
+                ),
+            ]).update_layout(
+                title="U-District vs City Trend (city scaled /20 for readability)",
+                yaxis_title="Incidents",
+                xaxis=dict(title="Year", tickmode="linear", tick0=2021, dtick=1),
+            ))),
         ]),
 
         # Q4
