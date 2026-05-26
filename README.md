@@ -25,7 +25,7 @@ Interactive Plotly Dash dashboard analyzing SPD crime data 2021-2025 across 4 gu
 
 ```bash
 # 1. Clone
-git clone https://github.com/YOUR_USERNAME/seattle-crime-dashboard.git
+git clone https://github.com/uditok95/seattle-crime-dashboard.git
 cd seattle-crime-dashboard
 
 # 2. Install dependencies
@@ -53,9 +53,3 @@ python app.py
 Seattle Police Department Open Data  
 [data.seattle.gov — SPD Crime Data 2008-Present](https://data.seattle.gov/Public-Safety/SPD-Crime-Data-2008-Present/tazs-3rd5)
 
-## Deploy to Render (free)
-1. Push this repo to GitHub
-2. Go to [render.com](https://render.com) → New → Web Service
-3. Connect your GitHub repo
-4. Render auto-detects `render.yaml` — click **Deploy**
-5. Your public URL will be `https://your-app-name.onrender.com`
