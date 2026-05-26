@@ -3,8 +3,7 @@
 Interactive Plotly Dash dashboard analyzing SPD crime data 2021-2025 across 4 guiding questions.
 
 ## Live Dashboard
-> Deployed on Render: **[your-app-name.onrender.com](https://your-app-name.onrender.com)**  
-> *(update this link after deploying)*
+> Deployed on Render: https://seattle-crime-dashboard.onrender.com/ 
 
 ## Guiding Questions
 1. **Property-related crimes** — Has residential crime shifted over 5 years?
